@@ -1,7 +1,7 @@
 {
   "name": "notes-api",
   "version": "1.0.0",
-  "description": "A zero-runtime-dependency REST API built on Node.js core modules.",
+  "description": "A notes REST API built on Node.js core modules.",
   "type": "module",
   "main": "dist/server.js",
   "scripts": {
@@ -9,10 +9,12 @@
     "start": "node dist/server.js",
     "dev": "tsc && cp -r public dist/public && node dist/server.js"
   },
-  "devDependencies": {
+  "dependencies": {
+    "better-sqlite3": "^9.0.0",
+    "@types/better-sqlite3": "^7.6.0",
     "@types/node": "^22.0.0",
     "typescript": "^5.0.0"
   },
-  "keywords": ["nodejs", "rest-api", "zero-dependencies", "typescript"],
+  "keywords": ["nodejs", "rest-api", "typescript"],
   "license": "MIT"
 }
