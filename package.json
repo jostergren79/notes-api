@@ -5,23 +5,14 @@
   "type": "module",
   "main": "dist/server.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp -r public dist/public",
     "start": "node dist/server.js",
-    "dev": "tsc && node dist/server.js"
+    "dev": "tsc && cp -r public dist/public && node dist/server.js"
   },
   "devDependencies": {
-    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^22.0.0",
     "typescript": "^5.0.0"
   },
-  "keywords": [
-    "nodejs",
-    "rest-api",
-    "zero-dependencies",
-    "typescript"
-  ],
-  "license": "MIT",
-  "dependencies": {
-    "better-sqlite3": "^12.6.2"
-  }
+  "keywords": ["nodejs", "rest-api", "zero-dependencies", "typescript"],
+  "license": "MIT"
 }
