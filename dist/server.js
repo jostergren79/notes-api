@@ -13,7 +13,7 @@ import Database from "better-sqlite3";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 // ─── Config ───────────────────────────────────────────────────────────────────
-const PORT = 3000;
+const PORT = process.env.PORT ? parseInt(process.env.PORT) : 3000;
 const DB_PATH = path.join(__dirname, "data", "notes.db");
 // ─── Database setup ───────────────────────────────────────────────────────────
 fs.mkdirSync(path.join(__dirname, "data"), { recursive: true });
