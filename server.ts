@@ -9,7 +9,7 @@ import fs from "fs";
 import path from "path";
 import crypto from "crypto";
 import { fileURLToPath } from "url";
-import Database from "./notes-api/node_modules/@types/better-sqlite3";
+import Database from "better-sqlite3";
 
 // ─── ESM path fix ─────────────────────────────────────────────────────────────
 const __filename = fileURLToPath(import.meta.url);
